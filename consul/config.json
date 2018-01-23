@@ -1,0 +1,11 @@
+{
+  "service": {
+    "Name": "odk-sync",
+    "Port": 8080,
+    "Tags": ["openlmis-service"]
+  },
+  "path": [
+    "odktables",
+    "odktables/<all>"
+  ]
+}
