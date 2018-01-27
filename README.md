@@ -31,7 +31,7 @@
 3. Launch OpenLMIS services as usual
 4. Launch Sync Endpoint (and all supporting services)
     1. Configure them as usual (refer to [sync-endpoint-default-setup](https://github.com/opendatakit/sync-endpoint-default-setup) for detail)
-    2. `docker stack deploy -c sync-endpoint-stack/docker-compose.yml sync-openlmis`  
+    2. In the directory `sync-endpoint` execute `docker stack deploy -c docker-compose.yml sync-openlmis`  
     **note:** The provided `docker-compose.yml` is the same as the standard configuration provided by [sync-endpoint-default-setup](https://github.com/opendatakit/sync-endpoint-default-setup) but without the `web-ui` and `nginx` components. 
 5. Verify that both OpenLMIS and Sync Endpoint are available
 6. Register Sync Endpoint to OpenLMIS
