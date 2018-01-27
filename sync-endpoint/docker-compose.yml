@@ -79,10 +79,8 @@ networks:
       encrypted: ""
     internal: true
   sync-network:
-    driver: overlay
-    driver_opts:
-      encrypted: ""
-    internal: true
+    external:
+      name: sync-endpoint-openlmis-network
 
 volumes:
   db-vol: # preserve db
